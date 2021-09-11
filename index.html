@@ -346,6 +346,19 @@ Cookies
   </div>
 
  </div>
+<script type='text/javascript'>
+  document.onkeydown = function (e) {
+    e.preventDefault();        
+  }
+  jQuery(document).ready(function(){
+  jQuery(function() {
+        jQuery(this).bind("contextmenu", function(event) {
+            event.preventDefault();
+
+        });
+    });
+});
+</script>
 <script type="text/javascript">
   $(window).scroll(function(e){ 
   var $el = $('#myVideo'); 
